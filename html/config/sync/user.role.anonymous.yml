@@ -1,0 +1,26 @@
+uuid: 0dd59d8d-cdbe-4030-a2c3-50ea43cd6b59
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - cl_server
+    - contact
+    - filter
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: Gl1lr_RJQ9pMz_DZhY6pNX94k874Gqh15Gm8Du1EepQ
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use cl server'
+  - 'use text format restricted_html'
+  - 'view media'

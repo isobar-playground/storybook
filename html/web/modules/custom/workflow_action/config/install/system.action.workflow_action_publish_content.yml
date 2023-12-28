@@ -1,0 +1,12 @@
+id: workflow_action_publish_content
+label: 'Publish content to the Production environment'
+status: true
+langcode: en
+type: node
+plugin: workflow_action_publish_content
+dependencies:
+  enforced:
+    module:
+      - node
+  module:
+    - workflow_action

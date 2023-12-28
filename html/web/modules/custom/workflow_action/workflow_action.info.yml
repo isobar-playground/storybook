@@ -1,0 +1,4 @@
+name: Workflow Actions
+description: Provides custom workflow actions for entities
+type: module
+core_version_requirement: ^9 || ^10
