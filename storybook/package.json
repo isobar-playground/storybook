@@ -1,0 +1,25 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "license": "ISC",
+  "dependencies": {
+    "@lullabot/storybook-drupal-addon": "^2.0.6",
+    "sb": "^7.6.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.6",
+    "@storybook/addon-links": "^7.6.6",
+    "@storybook/blocks": "^7.6.6",
+    "@storybook/server": "^7.6.6",
+    "@storybook/server-webpack5": "^7.6.6",
+    "chromatic": "^10.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.6"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic"
+  }
+}

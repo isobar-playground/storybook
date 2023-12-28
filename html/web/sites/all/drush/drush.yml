@@ -1,0 +1,16 @@
+options:
+  uri: '${env.PROJECT_BASE_URL}'
+  root: '${env.DRUSH_ROOT}'
+command:
+  sql:
+    dump:
+      options:
+        result-file: '../../mysql/dump.sql'
+        structure-tables-list:
+          - 'cache'
+          - 'cache_*'
+          - 'history'
+          - 'search_*'
+          - 'sessions'
+          - 'watchdog'
+        extra-dump: '--no-tablespaces'
