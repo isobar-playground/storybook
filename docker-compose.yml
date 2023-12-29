@@ -222,8 +222,9 @@ services:
     image: wodby/node:$NODE_TAG
     container_name: "${PROJECT_NAME}_storybook"
     environment:
-      CHROMATIC_PROJECT_TOKEN: "chpt_48c5654be0964ef"
+      CHROMATIC_PROJECT_TOKEN: $CHROMATIC_PROJECT_TOKEN
       STORYBOOK_PROJECT_BASE_URL: $PROJECT_BASE_URL
+      STORYBOOK_PROJECT_BASE_PROTOCOL: $PROJECT_BASE_PROTOCOL
     working_dir: /app/storybook
     labels:
       - "traefik.http.services.${PROJECT_NAME}_storybook.loadbalancer.server.port=6006"
